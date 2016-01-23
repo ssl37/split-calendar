@@ -1,0 +1,29 @@
+{
+  "name": "split-calendar",
+  "version": "1.0.0",
+  "description": "Scheduling application for nightly splits.",
+  "dependencies": {
+        "express" : "~4.5.1",
+        "mongoose" : "~3.8.0",
+        "body-parser" : "~1.4.2",
+        "method-override" : "~2.0.2"        
+      }, 
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssl37/split-calendar.git"
+  },
+  "keywords": [
+    "Scheduling Aid",
+    "Splits"
+  ],
+  "author": "Steven Lutz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssl37/split-calendar/issues"
+  },
+  "homepage": "https://github.com/ssl37/split-calendar#readme"
+}

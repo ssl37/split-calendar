@@ -1,0 +1,68 @@
+.row-header-text {
+    transform: rotate(-90deg);
+    transform-origin: right;
+    font-size: 20px;
+    position: absolute;
+    height: 100%;
+    width: 2%;
+    white-space: nowrap;
+}
+.even-row {
+    background: rgba(0,128,0,0.25);
+    position: relative;
+}
+
+.odd-row {
+    position: relative;
+}
+
+.odd-row:#hover {
+    background:rgba(0,0,128,0.25);
+}
+
+@media (min-width: 768px){
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1  {
+    width: 100%;
+    *width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14%;
+    *width: 14%;
+  }
+}
+
+/**
+ *  The following is not really needed in this case
+ *  Only to demonstrate the usage of @media for large screens
+ */    
+@media (min-width: 1200px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14%;
+    *width: 14%;
+  }
+}
+
+.modal {
+  display: block;
+}
+
+.modal-body:before,
+  .modal-body:after {
+    display: table;
+    content: " ";
+}
+
+.modal-header:before,
+.modal-header:after {
+  display: table;
+  content: " ";
+}

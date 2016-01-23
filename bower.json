@@ -1,0 +1,35 @@
+{
+  "name": "split-calendar",
+  "description": "Scheduling application for nightly splits.",
+  "main": "server.js",
+  "authors": [
+    "Steven Lutz"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Scheduling Aid",
+    "Splits"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "https://github.com/ssl37/split-calendar#readme",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/libs",
+    "test",
+    "tests"
+  ],
+    "version": "1.0.0",
+    "dependencies": {
+        "bootstrap": "latest",
+        "font-awesome": "latest",
+        "animate.css": "latest",
+        "angular": "latest",
+        "angular-route": "latest",
+        "angular-ui": "latest"
+    }
+}

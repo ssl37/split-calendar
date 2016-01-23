@@ -1,0 +1,13 @@
+<div class="jumbotron text-center">
+    <h2>{{tagline}}</h2>
+    <div class="container">
+	<!--<div class="row" ng-repeat="wk in [1,2,3,4,5]">-->
+	<div class="row seven-cols clearfix" ng-class-even="'even-row'" ng-class-odd="'odd-row'" ng-repeat="wk in [2,3]">
+	    <div class="row-header-text pull-left">Week {{wk}}</div>
+	    <div class="col-md-1" ng-repeat="split in splits | filter:{week:wk} | orderBy:dayOfWeek">
+		<h3>{{ split.night }}</h3>
+		<div class="btn-group btn-group-vertical"><button class="btn btn-large" ng-repeat="nm in split.name">{{nm}}</button></div>
+	    </div>
+	</div>
+    </div>
+</div>

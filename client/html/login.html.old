@@ -1,0 +1,54 @@
+ <!-- Modal Login-->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h2 class="modal-title">Login Page</h2>
+      </div>
+      <div class="modal-body">
+          <form ng-submit="login(username, password)">
+              <label>Dislay name</label>
+              <input type="text" ng-model="user" class="ng-pristine ng-valid" data-toggle="tooltip" title="An animal name that will represent you on the splits calendar." data-position="bottom">
+              <label>User Name</label>
+              <input type="text" ng-model="name" class="ng-pristine ng-valid" data-toggle="tooltip" title="Some name that will help the WML identify you. It is hidden from other users." data-position="bottom">
+              <br/>
+              {{loginError}}  {{loggedUser}}
+              <br/><br/>
+          </form>
+       </div>
+       <div class="modal-footer">
+          <button class="btn btn-success" ng-click="">Submit</button>
+          <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+       </div>
+      </div>
+    </div>
+</div>
+
+
+<div ng-controller="ModalDemoCtrl">
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">I'm a modal!</h3>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li ng-repeat="item in items">
+                    <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item }}</a>
+                </li>
+            </ul>
+            Selected: <b>{{ selected.item }}</b>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+
+    <button type="button" class="btn btn-default" ng-click="open()">Open me!</button>
+    <button type="button" class="btn btn-default" ng-click="open('lg')">Large modal</button>
+    <button type="button" class="btn btn-default" ng-click="open('sm')">Small modal</button>
+    <button type="button" class="btn btn-default" ng-click="toggleAnimation()">Toggle Animation ({{ animationsEnabled }})</button>
+    <div ng-show="selected">Selection from a modal: {{ selected }}</div>
+</div>
